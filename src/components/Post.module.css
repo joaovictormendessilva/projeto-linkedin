@@ -1,0 +1,124 @@
+.post{
+    margin-top: 1rem;
+    background: var(--white);
+    border: solid 1px #ccc;
+    border-radius: 7px;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.headerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerContent button{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 0;
+}
+
+.headerContent button:hover{
+    color: var(--black);
+}
+
+.imgWithRole{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.imgWithRole img{
+    height: 48px;
+    width: 48px;
+    border-radius: 100%;
+}
+
+.authorName{
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.publishedAtBox{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.authorRole,.publishedAt{
+    font-size: 0.75rem;
+    color: var(--gray-200);
+}
+
+.postContent p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: var(--black);
+}
+
+.postContent img{
+    width: 100%;
+    margin-top: 1.25rem;
+}
+
+.likesAndActions{
+    
+    padding: 0.25rem 0.75rem;
+}
+
+.likesAndActions a{
+    text-decoration: none;
+    color: var(--gray-200);
+    margin-bottom: 1rem;
+}
+
+.likesAndActions hr{
+    margin: 0.25rem 0;
+    border-width: 0;
+    background: var(--gray-100);
+    height: 1px;
+}
+
+.likesAndActions a:hover{
+    text-decoration: none;
+    color: var(--profile-link-blue);
+    text-decoration: underline;
+    
+}
+
+.likesAndActions span{
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.likesAndActions .actionsPost{
+    margin-top: 0.5rem;
+}
+
+.likesAndActions .actionsPost ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.likesAndActions .actionsPost ul li button{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: var(--gray-200);
+    background: transparent;
+    border: 0;
+    padding: 0.625rem 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.likesAndActions .actionsPost ul li:hover{
+    background: var(--gray-100);
+    border-radius: 5px;
+}

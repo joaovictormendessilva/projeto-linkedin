@@ -1,0 +1,48 @@
+.addPostBox{
+    background: var(--white);
+    border: solid 1px #ccc;
+    border-radius: 7px;
+    padding: 1rem;
+}
+
+.imageWithInput{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.imageWithInput button{
+    background: var(--white);
+    border: solid 1px #ccc;
+    border-radius: 30px;
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    color: var(--gray-200);
+}
+
+.avatarImg{
+    width: 60px;
+    border-radius: 100%;
+}
+
+.optionsList{
+    margin-top: 0.875rem;
+}
+
+.optionsList ul{
+    list-style: none;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.optionsList ul li{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gray-200);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
