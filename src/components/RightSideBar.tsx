@@ -1,5 +1,8 @@
-import { Info } from 'phosphor-react';
+import { DotsThree, Info } from 'phosphor-react';
 import styles from './RightSideBar.module.css'
+
+import KeyImg from '../assets/key.jpg'
+import LogoFooter from '../assets/logo-footer.svg'
 
 export function RightSideBar() {
     return (
@@ -58,6 +61,57 @@ export function RightSideBar() {
                             </a>
                         </li>
                     </ul>
+                </div>
+            </div>
+
+            <div className={styles.ad}>
+                <div className={styles.adContainer}>
+                    <div className={styles.adTitle}>
+                        <span>Anúncio</span>
+                        <button><DotsThree size={32} /></button>
+                    </div>
+
+                    <h2>
+                        <span>
+                            João Victor
+                        </span>
+                        , alcance todo o seu potencial com o LinkedIn Premium
+                    </h2>
+
+                    <div>
+                        <img src={KeyImg} alt="Ícone de chave LinkedIn Premium" />
+                    </div>
+
+                    <div className={styles.callToActionText}>
+                        <p>
+                            Saiba quem viu seu perfil nos últimos 90 dias
+                        </p>
+                    </div>
+
+                    <div className={styles.callToActionButton}>
+                        <a href="#">Experimente grátis</a>
+                    </div>
+                </div>
+
+                <div className={styles.sideRightFooter}>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Acessibilidade</a></li>
+                            <li><a href="#">Central de Ajuda</a></li>
+                            <li><a href="#">Termos e Privacidade</a></li>
+                            <li><a href="#">Preferência de anúncios</a></li>
+                            <li><a href="#">Publicidade</a></li>
+                            <li><a href="#">Serviços empresariais</a></li>
+                            <li><a href="#">Baixe o aplicativo do LinkedIn</a></li>
+                            <li><a href="#">Mais</a></li>
+                        </ul>
+
+                        <footer>
+                            <img src={LogoFooter} alt="Logo linkedIn footer" />
+                            <h2>LinkedIn Corporation © 2022</h2>
+                        </footer>
+                    </nav>
                 </div>
             </div>
         </div>    

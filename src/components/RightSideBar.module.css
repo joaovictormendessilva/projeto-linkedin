@@ -54,3 +54,109 @@
     line-height: 1rem;
     padding: 0 0.75rem 0 2rem; 
 }
+
+.ad{
+    position: sticky;
+    top: 80px;
+}
+
+.adContainer{
+    margin-top: 0.5rem;
+    text-align: center;
+    background: var(--white);
+    border: solid 1px #ccc;
+    border-radius: 7px;
+    padding: 0.75rem 0.75rem 1.2rem 0.75rem;
+    
+    
+}
+
+.adTitle{
+    text-align: right;
+    color: var(--black);
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.adTitle button{
+    background: transparent;
+    border: 0;
+    height: 28px;
+    cursor: pointer;
+}
+
+.adContainer h2{
+    color: #0000008c;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+
+}
+
+.adContainer img{
+    margin-top: 0.875rem;
+    width: 70px;
+}
+
+.callToActionText p{
+    color: #000000b3;
+    font-weight: 400;
+    line-height: 1.25rem;
+    font-size: 0.938;
+    margin: 0.25rem 0 1rem 0;
+}
+
+.callToActionButton a{
+    color: var(--profile-link-blue);
+    border: solid 1px var(--profile-link-blue);
+    text-decoration: none;
+    border-radius: 1rem;
+    font-weight: 600;
+    padding: 0.25rem 1rem;
+    height: 32px;
+
+}
+
+.sideRightFooter ul{
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 1.5rem;
+}
+
+.sideRightFooter li{
+    margin: 0.25rem 0.5rem;
+}
+
+.sideRightFooter a{
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-decoration: none;
+    color: var(--gray-200);
+}
+
+.sideRightFooter a:hover{
+    text-decoration: underline;
+    color: var(--profile-link-blue);
+}
+
+.sideRightFooter footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sideRightFooter footer img svg{
+    color: red;
+}
+
+.sideRightFooter footer h2{
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: var(--black);
+}

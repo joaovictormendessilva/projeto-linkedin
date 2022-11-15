@@ -86,3 +86,62 @@
     font-weight: 600;
     font-size: 0.75rem;
 }
+
+.moreActions {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-radius: 7px;
+    border: solid 1px #ccc;
+    background: var(--white);
+
+    position: sticky;
+    top: 80px;
+}
+
+.moreActions ul{
+    list-style: none;
+    border-bottom: solid 1px var(--gray-100);
+}
+
+.moreActions li{
+    padding: 0.25rem 0.75rem;
+}
+
+.moreActions a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.linkAndPlusButton{
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkAndPlusButton button{
+    line-height: 0;
+    background: transparent;
+    border: 0;
+    color: var(--gray-200);
+    cursor: pointer;
+}
+
+.linkAndPlusButton button:hover {
+    background: var(--gray-100);
+    border-radius: 100%;
+    color: #000000;
+}
+
+.findOutMore h2{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: var(--gray-200);
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.findOutMore h2:hover{
+    background: var(--gray-100);
+}

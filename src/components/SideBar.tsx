@@ -1,6 +1,6 @@
 import styles from './SideBar.module.css';
 
-import { BookmarkSimple } from 'phosphor-react';
+import { BookmarkSimple, Plus } from 'phosphor-react';
 
 export function SideBar() {
     return (
@@ -36,6 +36,26 @@ export function SideBar() {
                     <BookmarkSimple size={20} />
                     <span>Meus itens</span>
                 </div>
+            </div>
+
+            <div className={styles.moreActions}>
+                <nav>
+                    <ul>
+                        <li><a href="#">Grupos</a></li>
+                        <li>
+                            <a className={styles.linkAndPlusButton} href="#">
+                                Eventos
+                                <button><Plus size={16}/></button>
+                            </a>
+                        </li>
+                        <li><a href="#">Hashtags seguidas</a></li>
+                    </ul>
+                    
+                    <a className={styles.findOutMore} href="#">
+                        <h2>Descubra mais</h2>
+                    </a>
+                </nav>
+
             </div>
         </aside>
     );
