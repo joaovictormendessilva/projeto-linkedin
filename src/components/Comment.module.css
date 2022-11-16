@@ -1,0 +1,94 @@
+.comment{
+    display: flex;
+    margin: 1rem 0;
+    gap: 0.5rem;
+}
+
+.avatarImg{
+    width: 40px;
+    border-radius: 100%;
+}
+
+.commentBox{
+    background: #f2f2f2;
+    border-radius: 0px 5px 5px 5px;
+}
+
+.publishedAt{
+    font-size: 0.75rem;
+    color: var(--gray-200);
+}
+
+.commentHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+}
+
+.commentOwnersName{
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.313rem;
+    color: var(--black);
+    margin-bottom: -3px;
+}
+
+.commentOwnersRole{
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: var(--gray-200);
+}
+
+.publishedAtAndActions{
+    display: flex;
+    align-items: center;
+}
+
+.publishedAtAndActions button{
+    cursor: pointer;
+}
+
+.commentActions{
+    line-height: 0;
+    border: 0;
+}
+
+.commentText{
+    padding: 0 1rem 0.75rem 0.75rem;
+}
+
+.commentText p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: var(--black);
+}
+
+.likeContainer{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding-left: 0.5rem;
+}
+
+.likeContainer a, .likeContainer span{
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1rem;
+    color: var(--gray-200);
+    text-decoration: none;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.likeContainer a:hover{
+    background: var(--gray-100);
+}
+
+.likeIcon{
+    background: var(--profile-link-blue);
+    color: white;
+    padding: 1px;
+    border-radius: 100%;
+}

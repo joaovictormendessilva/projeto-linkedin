@@ -1,5 +1,6 @@
 import styles from './Post.module.css';
-import { Planet, Trash, ThumbsUp, ChatCircleText, Repeat, PaperPlaneTilt } from "phosphor-react";
+import { Planet, Trash, ThumbsUp, ChatCircleText, Repeat, PaperPlaneTilt, DotsThree } from "phosphor-react";
+import { Comment } from './Comment.';
 
 export function Post() {
     return (
@@ -48,8 +49,18 @@ export function Post() {
                         <li><button><Repeat size={24} />Compartilhar</button></li>
                         <li><button><PaperPlaneTilt size={24} />Enviar</button></li>
                     </ul>
-                    
                 </div>
+            </div>
+
+            <div className={styles.commentSpace}>
+                {/* Input para comentar */}
+                <div className={styles.inputForComment}>
+                    <img className={styles.avatarImg} src="https://github.com/joaovictormendessilva.png" alt="Foto de perfil do usuário" />
+                    <input type="text" placeholder='Adicionar comentário' />
+                </div>
+
+                {/* Comentário */}
+                <Comment />
             </div>
         </div>
     );
