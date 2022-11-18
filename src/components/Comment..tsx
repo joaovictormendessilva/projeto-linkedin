@@ -1,7 +1,23 @@
 import { DotsThree, ThumbsUp } from 'phosphor-react';
+import { useState } from 'react';
 import styles from './Comment.module.css';
 
-export function Comment() {
+interface CommentProps {
+    content: string;
+}
+
+export function Comment({ content }: CommentProps) {
+
+    const [commentLikeCount, setcommentLikeCount] = useState(0);
+    const [alreadyLikedComment, setalreadyLikedComment] = useState(false);
+
+    function handleAddCommentLikeCount(){
+        if(alreadyLikedComment == false){
+            setcommentLikeCount(commentLikeCount + 1)
+            setalreadyLikedComment(alreadyLikedComment => true)
+        }
+    }
+
     return (
         <div className={styles.comment}>
                     <div>
@@ -11,7 +27,7 @@ export function Comment() {
                         <div className={styles.commentBox}>
                             <div className={styles.commentHeader}>
                                 <div>
-                                    <h2 className={styles.commentOwnersName}>Dono do comentário</h2>
+                                    <h2 className={styles.commentOwnersName}>Owner</h2>
                                     <span className={styles.commentOwnersRole}>Cargo</span>
                                 </div>
                                 <div className={styles.publishedAtAndActions}>
@@ -20,17 +36,15 @@ export function Comment() {
                                 </div>
                             </div>
                             <div className={styles.commentText}>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                    Asperiores possimus, similique ut repellendus accusamus sapiente 
-                                    vero nemo est aspernatur explicabo, voluptatum, ullam accusantium 
-                                    architecto ducimus voluptatem vitae in molestias expedita!
+                                <p>
+                                    {content}
                                 </p>
                             </div>
                         </div>
                         <div className={styles.likeContainer}>
-                            <a href="#">Gostei</a>
+                            <button onClick={handleAddCommentLikeCount}>Gostei</button>
                             <span>°</span>
-                            <ThumbsUp className={styles.likeIcon} size={16}/><span> 1</span>
+                            <ThumbsUp className={styles.likeIcon} size={16}/><span> {commentLikeCount}</span>
                             
                         </div>
                     </div>
